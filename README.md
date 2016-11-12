@@ -1,17 +1,17 @@
-# HTML Portfolio
+# Portfolio HTML
 
-Welcome to the HTML Portfolio Project! For this project, you'll be creating a personal web page to show off your work. We will test your HTML knowledge and then it will be up to you to use CSS to style your own page and make it unique.
+Bienvenido al Proyecto Portafolio en HTML!. Para este proyecto, Estaras creando una pagina web personal para mostrar tu trabajo. Nosotros probaremos tus habilidades en HTMl y entonces dependera de Tí usar CSS para darle estilo a tu propia pagina y hacerla unica!.
 
-Please follow the instructions below to complete the project. Be sure to run tests to make sure your tests are passing before submitting your code.
+Por favor sigue las instrucciones para completar el proyecto. Asegurate de correr las pruebas ```npm test``` para asegurarte que tus pruebas estan pasando todo OK antes de subir tu codigo a tu repositorio maestro en tu cuenta GitHub!.
 
-## Getting Started
+## Comencemos
 
-To get started with this project, head over to the [HTML Portfolio](#) project on Code School, and begin!
+Para comenzar con este proyecto, diríjase al proyecto [HTML Portfolio](#) en Code School, y comience!
 
-For further instructions on how to get the app setup locally, visit our wiki:
+Para Obtener más instrucciones sobre cómo obtener la configuración de la aplicación localmente, visite nuestro wiki:
 
-1. [Welcome](https://github.com/codeschool/project-html-portfolio/wiki)
-2. [Prerequisites](https://github.com/codeschool/project-html-portfolio/wiki/Prerequisites)
+1. [Bienvenido](https://github.com/codeschool/project-html-portfolio/wiki)
+2. [Prerequisitos](https://github.com/codeschool/project-html-portfolio/wiki/Prerequisites)
 3. [Setup](https://github.com/codeschool/project-html-portfolio/wiki/Setup)
-4. [What we'll build](https://github.com/codeschool/project-html-portfolio/wiki/What-we'll-build)
-5. [Step by step](https://github.com/codeschool/project-html-portfolio/wiki/Step-by-step)
+4. [Que es lo que construiremos](https://github.com/codeschool/project-html-portfolio/wiki/What-we'll-build)
+5. [Paso a Paso](https://github.com/codeschool/project-html-portfolio/wiki/Step-by-step)
