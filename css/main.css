@@ -17,6 +17,8 @@ body {
   text-align: center;
   padding: 10px; }
   .pageHeader h1 {
+    background-color: tomato;
+    opacity: .8;
     margin: 15px 0px;
     /* offset-x | offset-y | blur-radius | color */
     text-shadow: 4px 1px 5px grey; }
@@ -161,4 +163,4 @@ body {
       .contact p a:visited {
         color: tomato; } }
 
-/*# sourceMappingURL=estilos.css.map */
+/*# sourceMappingURL=main.css.map */
