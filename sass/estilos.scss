@@ -1,0 +1,242 @@
+// Estos Comentarios no saldran
+// al archivo compilado CSS
+
+// @import 'buttons'; 'buttons.scss, buttons.sass'  Se incluira en el archivo CSS donde se hace el IMPORT y aparte
+// Nos creara de buttons.scss el archivo buttons.css
+
+// PARTIALS : Agregando un underscore '_' al archivo sass nos crea un partial, ejemplo '_buttons.scss' o '_buttons.sass'
+// Partials puede ser importados , pero no compilados al archivo .css
+
+/* Este comentario si saldra al archivo CSS */
+
+// Para lograr el sticky footer
+// 1. position: relative; al HTML
+// 2. margin-bottom: 100px; al body
+// 3. Al elemento que sera stciky footer :  .contact
+  // position: absolute;
+  // width: 100%;
+  // height: 100px;
+  // bottom: 0;
+
+html {
+  font-size: 16px;
+  min-height: 100%;
+  position: relative;
+}
+
+body { margin-bottom: 100px; }
+
+.flex_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.pageHeader {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px ;
+  h1 {
+    margin: 15px 0px;
+    text: {
+      /* offset-x | offset-y | blur-radius | color */
+      shadow: 4px 1px 5px grey;
+    }
+  }
+  h5{
+    color     : silver;
+    font-size : 1.2em;
+    margin    : 0;
+  }
+}
+
+.header {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 50px;
+  .avatar {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    border: 1.5px dashed whitesmoke;
+  }
+  h1{
+    color: orange;
+    text:{
+      /* offset-x | offset-y | blur-radius | color */
+      shadow: 3px 1px 5px grey;
+    }
+  }
+  h2 {
+    color: silver;
+    text:{
+      /* offset-x | offset-y | blur-radius | color */
+      shadow: 2px 2px 8px silver;
+    }
+  }
+}
+
+.tagline {
+  text-align: center;
+  h3{
+    color:lightblack;
+    text: {
+      /* offset-x | offset-y | blur-radius | color */
+      shadow: 5px 1px 5px grey;
+      transform: uppercase;
+    }
+  }
+  p {
+    color: silver;
+  }
+}
+
+.skills {
+  text-align: center;
+  h3 {
+    color: lightblack;
+    // Namespace
+    text: {
+      /* offset-x | offset-y | blur-radius | color */
+      shadow    : 5px 1px 5px grey;
+      transform : uppercase;
+    }
+  }
+  p {
+    color: darkgrey;
+    text: {
+      /* offset-x | offset-y | blur-radius | color */
+      shadow: -2px -1px 2px silver;
+    }
+  }
+  ul{
+    list-style-type : none;
+    padding         : 0;
+    color           : silver;
+  }
+}
+
+.contact {
+  text-align: center;
+  h3{
+    text:{
+      /* offset-x | offset-y | blur-radius | color */
+      shadow: -1px -1px 2px grey;
+    }
+  }
+  background-color: black;
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  bottom: 0;
+}
+
+/*  MEDIA QUERIES */
+/* iPhone6 */
+@media only screen and (max-width: 375px) {
+  body { background-color: teal; }
+  img {
+    height        : 160px;
+    width         : 160px;
+    border-radius : 50%;
+    border        : 1.5px dashed whitesmoke;
+    margin-top    : 10px;
+  }
+  .pageHeader {
+    h1 {
+      font-size : 2.4em;
+      margin    : 0;
+      color     : teal;
+      text: {
+        /* offset-x | offset-y | blur-radius | color */
+        shadow: -2px 1px 5px silver;
+      }
+    }
+    h5 {
+      font-size: 1.2em;
+    }
+  } 
+  .header{
+    h1 {
+      font-size: 1.5em;
+    }
+    h2 {
+      font-size: 1.3em;
+    }
+  }
+  .skills {
+    p {
+      color     : silver;
+      font-size : 1.2em;
+      text: {
+        /* offset-x | offset-y | blur-radius | color */
+        shadow: -2px -1px 2px grey;
+      }
+    }
+  }
+  .contact {
+    color   : silver;
+    opacity : .9;
+    h3  {
+      font-size: 1.2em;
+    }
+    p {
+      font-size : .65em;
+      color     : whitesmoke;
+      a{
+        color: white;
+        &:active{
+          color: red; 
+        }
+      }
+    }
+  }
+}
+
+/* iPhone5 */
+@media only screen and (max-width: 320px) {
+    body { background-color: tomato; }
+    img {
+      height: 160px;
+      width: 160px;
+      border-radius: 50%;
+      border: 1.5px dashed whitesmoke;
+      margin-top: 10px;
+    }
+    .pageHeader {
+      h1 {
+        font-size: 2.4em;
+        margin: 0;
+        color: tomato;
+      }
+      h5 {
+        font-size: 1.2em;
+        color: whitesmoke;
+      }
+    }
+    .header{
+      h1 {
+        font-size: 1.5em;
+      }
+      h2 {
+        font-size: 1.3em;
+      }
+    }
+    .contact {
+      h3  {
+        font-size: 1.2em;
+      }
+      p{
+        font-size: .65em;
+        a {
+          color: teal;
+          &:active {
+            color: white;
+          }
+          &:visited {
+            color: tomato;
+          }
+        }
+      }
+    }
+}

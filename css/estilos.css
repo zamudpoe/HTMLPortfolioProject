@@ -1,0 +1,164 @@
+/* Este comentario si saldra al archivo CSS */
+html {
+  font-size: 16px;
+  min-height: 100%;
+  position: relative; }
+
+body {
+  margin-bottom: 100px; }
+
+.flex_container {
+  display: flex;
+  flex-direction: column; }
+
+.pageHeader {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px; }
+  .pageHeader h1 {
+    margin: 15px 0px;
+    /* offset-x | offset-y | blur-radius | color */
+    text-shadow: 4px 1px 5px grey; }
+  .pageHeader h5 {
+    color: silver;
+    font-size: 1.2em;
+    margin: 0; }
+
+.header {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 50px; }
+  .header .avatar {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    border: 1.5px dashed whitesmoke; }
+  .header h1 {
+    color: orange;
+    /* offset-x | offset-y | blur-radius | color */
+    text-shadow: 3px 1px 5px grey; }
+  .header h2 {
+    color: silver;
+    /* offset-x | offset-y | blur-radius | color */
+    text-shadow: 2px 2px 8px silver; }
+
+.tagline {
+  text-align: center; }
+  .tagline h3 {
+    color: lightblack;
+    /* offset-x | offset-y | blur-radius | color */
+    text-shadow: 5px 1px 5px grey;
+    text-transform: uppercase; }
+  .tagline p {
+    color: silver; }
+
+.skills {
+  text-align: center; }
+  .skills h3 {
+    color: lightblack;
+    /* offset-x | offset-y | blur-radius | color */
+    text-shadow: 5px 1px 5px grey;
+    text-transform: uppercase; }
+  .skills p {
+    color: darkgrey;
+    /* offset-x | offset-y | blur-radius | color */
+    text-shadow: -2px -1px 2px silver; }
+  .skills ul {
+    list-style-type: none;
+    padding: 0;
+    color: silver; }
+
+.contact {
+  text-align: center;
+  background-color: black;
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  bottom: 0; }
+  .contact h3 {
+    /* offset-x | offset-y | blur-radius | color */
+    text-shadow: -1px -1px 2px grey; }
+
+/*  MEDIA QUERIES */
+/* iPhone6 */
+@media only screen and (max-width: 375px) {
+  body {
+    background-color: teal; }
+
+  img {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    border: 1.5px dashed whitesmoke;
+    margin-top: 10px; }
+
+  .pageHeader h1 {
+    font-size: 2.4em;
+    margin: 0;
+    color: teal;
+    /* offset-x | offset-y | blur-radius | color */
+    text-shadow: -2px 1px 5px silver; }
+  .pageHeader h5 {
+    font-size: 1.2em; }
+
+  .header h1 {
+    font-size: 1.5em; }
+  .header h2 {
+    font-size: 1.3em; }
+
+  .skills p {
+    color: silver;
+    font-size: 1.2em;
+    /* offset-x | offset-y | blur-radius | color */
+    text-shadow: -2px -1px 2px grey; }
+
+  .contact {
+    color: silver;
+    opacity: .9; }
+    .contact h3 {
+      font-size: 1.2em; }
+    .contact p {
+      font-size: .65em;
+      color: whitesmoke; }
+      .contact p a {
+        color: white; }
+        .contact p a:active {
+          color: red; } }
+/* iPhone5 */
+@media only screen and (max-width: 320px) {
+  body {
+    background-color: tomato; }
+
+  img {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    border: 1.5px dashed whitesmoke;
+    margin-top: 10px; }
+
+  .pageHeader h1 {
+    font-size: 2.4em;
+    margin: 0;
+    color: tomato; }
+  .pageHeader h5 {
+    font-size: 1.2em;
+    color: whitesmoke; }
+
+  .header h1 {
+    font-size: 1.5em; }
+  .header h2 {
+    font-size: 1.3em; }
+
+  .contact h3 {
+    font-size: 1.2em; }
+  .contact p {
+    font-size: .65em; }
+    .contact p a {
+      color: teal; }
+      .contact p a:active {
+        color: white; }
+      .contact p a:visited {
+        color: tomato; } }
+
+/*# sourceMappingURL=estilos.css.map */
