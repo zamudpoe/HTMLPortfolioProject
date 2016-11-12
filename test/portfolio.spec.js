@@ -1,18 +1,18 @@
 // Libraries
-const fs = require('fs');
-const jsdom = require('jsdom');
+const fs         = require('fs');
+const jsdom      = require('jsdom');
 const { assert } = require('chai');
 
 // HTML
 const srcHtml = fs.readFileSync('./src/index.html');
-const doc = jsdom.jsdom(srcHtml);
+const doc     = jsdom.jsdom(srcHtml);
 
 // Tests
 describe('The webpage', () => {
 
   /**
-   * HEADER
-   */
+  * HEADER
+  **/
   describe('header', () => {
     it('should exist @header', () => {
       const header = doc.querySelector('.header');
@@ -31,7 +31,6 @@ describe('The webpage', () => {
       assert.isOk(h2.textContent, 'Our header\'s `h2` element cannot be empty.');
     });
   });
-
 
   /**
    * TAGLINE
@@ -54,7 +53,6 @@ describe('The webpage', () => {
       assert.isOk(p.textContent, 'Our tagline\'s `p` element cannot be empty.');
     });
   });
-
 
   /**
    * SKILLS
@@ -98,7 +96,6 @@ describe('The webpage', () => {
       assert.equal(skillsWithHtml.length, 1, 'HTML needs be part of one of your skills.');
     });
   });
-
 
   /**
    * CONTACT

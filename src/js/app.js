@@ -1,0 +1,1 @@
+console.info('\n\n%cCodeSchool-Projects %cfue un %c"Programa Piloto" %cpara realizar proyectos con duracion de desarrollo de 1 Hora!, y lo quitaron sin avisar que HDP!', 'color: teal; font-weight: bold;', 'color: silver;','color: tomato;','color: silver;');
